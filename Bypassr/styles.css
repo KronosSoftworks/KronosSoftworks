@@ -1,20 +1,29 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('Space.jpg');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
 }
 
 .container {
     text-align: center;
+    margin-top: auto; /* Pushes the container to the bottom */
 }
 
 .purple-button {
-    background-color: purple;
+    background-color: rgb(150, 0, 200);
     color: white;
     border: none;
     padding: 10px 20px;
