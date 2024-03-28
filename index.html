@@ -61,12 +61,18 @@
         <span style="font-family: Arial;">Kronos Softworks</span>
     </div>
     <div class="container">
-        <button class="purple-button" onclick="GotoBypassr()">Bypassr</button>
-
+        <div class="button-container">
+    <button class="purple-button" onclick="GotoBypassr()">Bypassr</button>
+    <button class="purple-button" onclick="GotoKblox()">KBLOX Tools</button>
+</div>
         <script>
             function GotoBypassr() {
                 var currentPath = window.location.pathname;
                 window.location.href = currentPath + "/Bypassr";
+            }
+              function GotoKblox() {
+                var currentPath = window.location.pathname;
+                window.location.href = currentPath + "/KBLOX";
             }
         </script>
     </div>
