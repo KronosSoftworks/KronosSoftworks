@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Kronos Softworks</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <button class="purple-button">Click me</button>
+        <button class="purple-button" onclick="redirectToBypassr()">Download Bypassr</button>
+
+<script>
+  function GotoBypassr() {
+    var currentPath = window.location.pathname;
+    window.location.href = currentPath + "/Bypassr";
+  }
+</script>
     </div>
 </body>
 </html>
