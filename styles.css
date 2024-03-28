@@ -43,6 +43,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+.normal-text {
+            font-family: Arial;
+            font-size: 20px; /* Adjusted font size */
+            margin-bottom: 25px; /* Added margin bottom */
+            color: rgb(255,255,255);
+        }
 .big-text {
             font-family: Arial;
             font-size: 60px; /* Adjusted font size */
