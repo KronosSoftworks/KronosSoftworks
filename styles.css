@@ -43,7 +43,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.big-text {
+            font-family: Arial;
+            font-size: 30px; /* Adjusted font size */
+            margin-bottom: 20px; /* Added margin bottom */
+            color: rgb(255, 255, 255);
+        }
 .purple-button:hover {
     background-color: #6a1b9a; /* Darker shade of purple on hover */
 }
