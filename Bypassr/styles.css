@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; /* Set the body as the positioning context */
+    position: relative;
 }
 
 .header {
@@ -16,14 +16,15 @@ body {
     padding: 10px;
     width: 100%;
     text-align: left;
-    position: absolute; /* Position the header absolutely */
-    top: 0; /* Position the header at the top */
-    left: 0; /* Align the header to the left */
+    position: fixed; /* Position the header fixed at the top */
+    top: 0;
+    left: 0;
 }
 
 .container {
     text-align: center;
-    margin-top: 50px; /* Adjust the margin to prevent overlap with the header */
+    position: relative;
+    margin-top: 50px; /* Add margin top to push container content down */
 }
 
 .purple-button {
