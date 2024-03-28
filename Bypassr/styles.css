@@ -27,7 +27,18 @@ body {
     position: relative;
     margin-top: 50px; /* Add margin top to push container content down */
 }
-
+.normal-text {
+            font-family: Arial;
+            font-size: 20px; /* Adjusted font size */
+            margin-bottom: 25px; /* Added margin bottom */
+            color: rgb(255,255,255);
+        }
+.big-text {
+            font-family: Arial;
+            font-size: 60px; /* Adjusted font size */
+            margin-bottom: 20px; /* Added margin bottom */
+            color: rgb(255, 255, 255);
+        }
 .purple-button {
     background-color: rgb(150, 0, 200);
     color: white;
