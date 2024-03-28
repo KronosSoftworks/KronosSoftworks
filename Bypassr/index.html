@@ -7,13 +7,50 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background-image: url('Space.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            background-color: rgb(15, 15, 15);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .purple-button {
+            background-color: rgb(150, 0, 200);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .purple-button:hover {
+            background-color: #6a1b9a; /* Darker shade of purple on hover */
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <span>Bypassr</span>
+    </div>
     <div class="container">
         <button class="purple-button" onclick="DownloadBypassr()">Download</button>
 
