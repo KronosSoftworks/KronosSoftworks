@@ -39,6 +39,10 @@ body {
             margin-bottom: 20px; /* Added margin bottom */
             color: rgb(255, 255, 255);
         }
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
 .purple-button {
     background-color: rgb(150, 0, 200);
     color: white;
