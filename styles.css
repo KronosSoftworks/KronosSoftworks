@@ -1,20 +1,35 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('Space.jpg');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.header {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    position: fixed; /* Position the header fixed at the top */
+    top: 0;
+    left: 0;
 }
 
 .container {
     text-align: center;
+    position: relative;
+    margin-top: 50px; /* Add margin top to push container content down */
 }
 
 .purple-button {
-    background-color: purple;
+    background-color: rgb(150, 0, 200);
     color: white;
     border: none;
     padding: 10px 20px;
