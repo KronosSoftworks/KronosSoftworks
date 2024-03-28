@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kronos Softworks</title>
-    <script>
-        function GotoBypassr() {
-            var currentPath = window.location.pathname;
-            window.location.href = currentPath + "/Bypassr";
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('Space.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
-    </script>
+    </style>
 </head>
-<body style="background-image: url('Space.jpg'); background-size: cover;">
+<body>
     <div class="container">
         <button class="purple-button" onclick="GotoBypassr()">Download Bypassr</button>
+
+        <script>
+            function GotoBypassr() {
+                var currentPath = window.location.pathname;
+                window.location.href = currentPath + "/Bypassr";
+            }
+        </script>
     </div>
 </body>
 </html>
