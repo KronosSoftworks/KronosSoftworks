@@ -2,84 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bypassr</title>
-    <link rel="icon" type="image/png" href="BypassrLogo.png">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <meta content="Bypassr" property="og:title" />
-    <meta content="Bypassr is a very useful tool for bypassing filters in many online games. It is built for Roblox, but has been shown to work on apps like Discord." property="og:description" />
-    <meta content="https://kronossoftworks.github.io/KronosSoftworks/Bypassr/" property="og:url" />
-    <meta content="https://kronossoftworks.github.io/KronosSoftworks/Bypassr/BypassrLogo.png" property="og:image" />
-    <meta content="#c800ff" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('Space.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .header {
-            background-color: rgb(15, 15, 15);
-            color: white;
-            padding: 10px;
-            width: 100%;
-            text-align: left;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .purple-button {
-            background-color: rgb(150, 0, 200);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .purple-button:hover {
-            background-color: #6a1b9a; /* Darker shade of purple on hover */
-        }
-    </style>
+    <title>Bypassr - Kronos Softworks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Bypassr.png" type="image/png">
 </head>
 <body>
-    <div class="header">
-        <span style="font-family: Arial;">Bypassr</span>
+    <div class="topbar">
+        <div class="topbar-left">
+            <img src="Bypassr.png" alt="Bypassr Logo" class="topbar-logo">
+            <span class="topbar-title">Bypassr</span>
+        </div>
+    <div class="topbar-right">
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Make sure you followed the tutorial! The bypass won't work if you don't have a certain language set in your Roblox settings!
+        </div>
     </div>
-          <span class="big-text">Bypassr</span>
-     <span class="normal-text"style="font-family: Arial;">Bypassr is a very useful tool for bypassing filters in many online games. It is built for Roblox, but has been shown to work on apps like Discord.</span>
-    <div class="container">
-           <div class="button-container">
-                
-        <button class="purple-button" onclick="DownloadBypassr()">Download</button>
-   
-           </div>
-        <script defer>
-            function DownloadBypassr() {
-                var currentURL = window.location.href;
-                var downloadURL = currentURL + "/Bypassr.zip";
-                var downloadLink = document.createElement("a");
-                downloadLink.href = downloadURL;
-                downloadLink.setAttribute("download", "Bypassr.zip");
-                document.body.appendChild(downloadLink);
-                downloadLink.click();
-                document.body.removeChild(downloadLink);
+  <a href="https://kronossoftworks.github.io/KronosSoftworks/" target="_blank" rel="noopener noreferrer">
+        <img src="KronosSoftworks.png" alt="KronosSoftworks Logo" class="topbar-right-logo">
+    </a>
+</div>
+
+    </div>
+
+    <div class="main">
+       <div class="sidebar">
+    <img src="Home.png" alt="Home" title="Home" class="tab-icon" data-tab="home">
+    <img src="Settings.png" alt="Settings" title="Settings" class="tab-icon" data-tab="settings">
+    <img src="Credits.png" alt="Credits" title="Credits" class="tab-icon" data-tab="credits">
+    <img src="Tutorial.png" alt="Tutorial" title="Tutorial" class="tab-icon" data-tab="tutorial">
+</div>
+
+        <div class="content-wrapper">
+            <div class="content tab-content" id="homeTab">
+                <textarea id="textBox" placeholder="Type something here..."></textarea>
+                <div style="display: flex; gap: 10px; align-items: stretch;">
+                    <button id="modifyButton" class="grow-button">Bypass</button>
+                    <button id="copyButton">Copy to Clipboard</button>
+                </div>
+            </div>
+
+            <div class="content tab-content" id="settingsTab" style="display: none; position: relative; overflow: hidden;">
+                <div id="bouncingText">Nothing here yet</div>
+            </div>
+
+            <div class="content tab-content" id="creditsTab" style="display: none;">
+                <h2>Credits</h2>
+                <ul class="credits-list">
+                    <li><strong>Programmer:</strong> <a href="https://www.youtube.com/@Kronos.Solaris" target="_blank">@Kronos Solaris</a></li>
+                    <li><strong>Designer:</strong> <a href="https://www.youtube.com/@Kronos.Solaris" target="_blank">@Kronos Solaris</a></li>
+                    <li><strong>Chat Bypass Method:</strong> <a href="https://www.youtube.com/@Gazer_ha" target="_blank">@Gazer_ha</a></li>
+                    <li><strong>Script Discovery:</strong> <a href="https://www.youtube.com/@MelonScripter" target="_blank">@MelonScripter</a></li>
+                </ul>
+                <p>
+    Join the <strong><a href="https://discord.gg/9puDvjkKdS" target="_blank" rel="noopener noreferrer">Kronos Softworks Discord</a></strong> to ask questions, get support, or just to hang out with the community!
+</p>
+
+            </div>
+
+         <div class="content tab-content" id="tutorialTab" style="display: none;">
+    <h2>Tutorial</h2>
+    <div id="tutorialContainer" style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+        <p id="tutorialText" style="margin-bottom: 15px; font-size: 1.1rem;">
+            Click the settings icon on the Roblox homepage.
+        </p>
+        <img id="tutorialImage" src="Tutorial/Step1.png" alt="Tutorial Step" style="max-width: 100%; max-height: 400px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 0 10px #a259ff66;">
+        <div style="display: flex; gap: 10px;">
+            <button id="prevStep">&lt;</button>
+            <button id="nextStep">&gt;</button>
+        </div>
+        <button id="doneTutorial" style="margin-top: 20px; padding: 10px 20px;">Done</button>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab-icon');
+        const contents = document.querySelectorAll('.tab-content');
+
+     tabs.forEach(tab => {
+    tab.addEventListener('click', async () => {
+        contents.forEach(content => content.style.display = 'none');
+        const newtab = document.getElementById(tab.dataset.tab + 'Tab');
+        newtab.style.display = 'flex';
+        const containerid = tab.dataset.tab + "Tab";
+        const particlesid = containerid + "_particles";
+        const particles = await tsParticles.domItem(0);
+        if (particles) await particles.destroy();
+        initparticles(containerid);
+    });
+});
+
+    </script>
+    <script src="script.js"></script>
+    <script>
+    const tutorialsteps = [
+        "Click the settings icon on the Roblox homepage. It should be on the top right.",
+        "Click 'Settings'.",
+        "Find the 'Language' section.",
+        "Find this option (Қазақ Тілі). Select it.",
+        "It should now look like this if you followed the steps correctly. The bypass method should now work.",
+    ];
+    let current = 1;
+    const tutorialtext = document.getElementById("tutorialText");
+    const tutorialimage = document.getElementById("tutorialImage");
+    const prevbtn = document.getElementById("prevStep");
+    const nextbtn = document.getElementById("nextStep");
+   function updatetutorial() {
+    tutorialtext.textContent = tutorialsteps[current - 1];
+    tutorialimage.src = `Tutorial/Step${current}.png`;
+    prevbtn.disabled = current === 1;
+    nextbtn.disabled = current === tutorialsteps.length;
+    const donebtn = document.getElementById("doneTutorial");
+    if (current === tutorialsteps.length) {
+        donebtn.style.display = "inline-block";
+    } else {
+        donebtn.style.display = "none";
+    }
+}
+
+    prevbtn.addEventListener("click", () => {
+        if (current > 1) {
+            current--;
+            updatetutorial();
+        }
+    });
+    nextbtn.addEventListener("click", () => {
+        if (current < tutorialsteps.length) {
+            current++;
+            updatetutorial();
+        }
+    });
+    updatetutorial();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+function initparticles(containerid) {
+    tsParticles.load(containerid + "_particles", {
+        fullScreen: { enable: false },
+        background: { color: "transparent" },
+        particles: {
+            number: { value: 60 },
+            color: { value: "rgb(180, 0, 255)" },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 4 } },
+            move: {
+                enable: true,
+                speed: 1.2,
+                direction: "none",
+                outModes: { default: "bounce" },
+                attract: { enable: false }
+            },
+            opacity: { value: 0.6 }
+        },
+        interactivity: {
+            events: {
+                onHover: { enable: true, mode: "repulse" },
+                resize: true
+            },
+            modes: {
+                repulse: {
+                    distance: 100,
+                    duration: 0.4
+                }
             }
-        </script>
-    </div>
+        }
+    });
+}
+["homeTab", "settingsTab", "creditsTab", "tutorialTab"].forEach(id => {
+    const tab = document.getElementById(id);
+    const canvas = document.createElement("div");
+    canvas.id = id + "_particles";
+    canvas.className = "particles-bg";
+    tab.appendChild(canvas);
+    initparticles(id);
+});
+</script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const tutorialdone = localStorage.getItem("tutorialdone");
+        const defaulttab = tutorialdone === "true" ? "home" : "tutorial";
+        const defaulttabelement = document.querySelector(`.tab-icon[data-tab="${defaulttab}"]`);
+        if (defaulttabelement) defaulttabelement.click();
+    });
+    const donebtn = document.getElementById("doneTutorial");
+    donebtn.addEventListener("click", () => {
+        localStorage.setItem("tutorialdone", "true");
+        document.querySelector('.tab-icon[data-tab="home"]').click();
+    });
+</script>
+
 </body>
 </html>
