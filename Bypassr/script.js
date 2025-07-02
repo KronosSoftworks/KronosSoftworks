@@ -110,8 +110,6 @@ function bounceText() {
 
     requestAnimationFrame(bounceText);
 }
-
-// Only start bouncing when Settings tab is shown
 document.querySelector('[data-tab="settings"]').addEventListener('click', () => {
     requestAnimationFrame(bounceText);
 });
